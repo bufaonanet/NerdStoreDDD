@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>    
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-NerdStoreDDD.WebApp.MVC-97a622a9-d87e-4465-bd6a-b1ee6fba28d7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NerdStoreDDD.Catalogo.Application\NerdStoreDDD.Catalogo.Application.csproj" />
+    <ProjectReference Include="..\NerdStoreDDD.Catalogo.Data\NerdStoreDDD.Catalogo.Data.csproj" />
+    <ProjectReference Include="..\NerdStoreDDD.Catalogo.Domain\NerdStoreDDD.Catalogo.Domain.csproj" />
+    <ProjectReference Include="..\NerdStoreDDD.Core\NerdStoreDDD.Core.csproj" />
+  </ItemGroup>
+
+</Project>
